@@ -3,6 +3,7 @@ import { Home } from './Pages/Home/Home';
 import { Banners } from './Pages/Banners/Banners';
 import CTA from './Pages/CTASections/CTA';
 import TeamSections from './Pages/TailwindCSSTeamSections/TeamSections';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/banners" element={<Banners />} />
         <Route path="/cta" element={<CTA />} />
         <Route path="/team" element={<TeamSections />} />
+        <Route path="*" element={<NotFound />} />
         {/* other routes */}
       </Routes>
     </Router>

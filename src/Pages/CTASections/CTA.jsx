@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import {  Link, useNavigate } from "react-router-dom";
 
 const CTA = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="max-w-screen-xl mx-auto my-24">
       <div className="flex items-center justify-between">
         <h3 className="text-3xl text-gray-800 font-semibold md:text-4xl my-12 underline">
           Tailwind CSS CTA Sections:
         </h3>
-        <Link
+        <button
           className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-          to="/"
+          onClick={() => navigate('/')}
         >
           <span className="absolute -start-full transition-all group-hover:start-4">
             <svg
@@ -33,8 +36,16 @@ const CTA = () => {
             {" "}
             Back{" "}
           </span>
-        </Link>
+        </button>
       </div>
+      {/* Secondary CTA */}
+      <span className="relative flex justify-center my-12">
+        <div
+          className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+        ></div>
+
+        <span className="relative z-10 bg-white px-6">Secondary CTA </span>
+      </span>
       <section className="relative max-w-screen-xl mx-auto py-4 px-4 md:px-8  border-2 border-yellow-400 rounded-2xl">
         <div className="absolute top-0 left-0 w-full h-full bg-white opacity-40"></div>
         <div className="relative z-10 gap-5 items-center lg:flex">
@@ -80,6 +91,13 @@ const CTA = () => {
       </section>
       <br />
       {/* CTA with image */}
+      <span className="relative flex justify-center my-12">
+        <div
+          className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+        ></div>
+
+        <span className="relative z-10 bg-white px-6">CTA with image</span>
+      </span>
       <section className="py-14 border-2 border-yellow-400 rounded-2xl">
         <div className="max-w-screen-xl mx-auto md:px-8">
           <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
@@ -125,6 +143,27 @@ const CTA = () => {
             </div>
           </div>
         </div>
+      </section>
+      <br />
+      {/* CTA with Blue background */}
+      <span className="relative flex justify-center my-12">
+        <div
+          className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+        ></div>
+
+        <span className="relative z-10 bg-white px-6">CTA with Blue background</span>
+      </span>
+      <section className="py-28 relative bg-blue-600 border-2 border-yellow-400 rounded-2xl">
+        <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:text-center md:px-8">
+          <div className="max-w-xl md:mx-auto">
+            <p className="text-white text-3xl font-semibold sm:text-4xl">Build the future with us</p>
+            <p className="text-blue-100 mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+          <div className="mt-4">
+            <Link onClick={() => navigate('/')} className="inline-block py-2 px-4 text-gray-800 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-full">Get Started</Link>
+          </div>
+        </div>
+        <div className="absolute top-0 w-full h-full " style={{ background: "linear-gradient(268linear-gradient(268.24deg, rgba(59, 130, 246, 0.76) 50%, rgba(59, 130, 246, 0.545528) 80.61%, rgba(55, 48, 163, 0) 117.35%))"}}></div>
       </section>
     </div>
   );
