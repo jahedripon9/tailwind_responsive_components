@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 export const Banners = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="max-w-screen-xl mx-auto my-24">
       <div className="flex items-center justify-between">
         <h3 className="text-3xl text-gray-800 font-semibold md:text-4xl my-12 underline">
           Tailwind CSS Banners Sections:
         </h3>
-        <Link
+        <button
           className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-red-500"
-          to="/"
+          onClick={() => navigate('/')}
         >
           <span className="absolute -start-full transition-all group-hover:start-4">
             <svg
@@ -32,7 +35,7 @@ export const Banners = () => {
             {" "}
             Back{" "}
           </span>
-        </Link>
+        </button>
       </div>
       {/* Banner Centred */}
       <div className="bg-amber-600">
