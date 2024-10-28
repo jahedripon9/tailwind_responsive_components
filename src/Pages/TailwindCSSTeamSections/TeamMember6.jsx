@@ -2,7 +2,7 @@
 const TeamMember6 = () => {
   return (
     <div>
-        <div className="font-[sans-serif] max-w-5xl max-lg:max-w-4xl  max-sm:max-w-sm mx-auto mt-4 container px-4 mx-auto">
+        <div className="font-[sans-serif] max-w-5xl max-lg:max-w-4xl  max-sm:max-w-sm  mt-4 container px-4 mx-auto">
             <div className="max-w-2xl mx-auto text-center">
                 <h2 className="text-gray-800 text-3xl font-extrabold">Meet our team</h2>
                 <p className="text-gray-800 text-sm mt-4 leading-relaxed">Meet our team of professionals to serve you.</p>

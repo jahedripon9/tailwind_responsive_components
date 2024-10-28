@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import CallToAction1 from "./CallToAction1";
 import CallToAction2 from "./CallToAction2";
-=======
-import {  Link, useNavigate } from "react-router-dom";
->>>>>>> d63c13239eb825e7778eb14843bbf01041077032
 
 const CTA = () => {
-
-  const navigate = useNavigate();
 
   return (
     <div className="max-w-screen-xl mx-auto my-24">
@@ -22,9 +16,10 @@ const CTA = () => {
           </Link>{" "}
           Sections:
         </h3>
+        <Link to='/'>
         <button
           className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-          onClick={() => navigate('/')}
+          
         >
           <span className="absolute -start-full transition-all group-hover:start-4">
             <svg
@@ -49,6 +44,7 @@ const CTA = () => {
             Back{" "}
           </span>
         </button>
+        </Link>
       </div>
       {/* Secondary CTA */}
       <span className="relative flex justify-center my-12">
@@ -156,10 +152,7 @@ const CTA = () => {
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-      <CallToAction1 />
-      <CallToAction2 />
-=======
+
       <br />
       {/* CTA with Blue background */}
       <span className="relative flex justify-center my-12">
