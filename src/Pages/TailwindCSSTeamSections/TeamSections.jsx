@@ -6,6 +6,9 @@ import TeamMember4 from "./TeamMember4";
 import TeamMember5 from "./TeamMember5";
 import TeamMemberItem from "./TeamMemberItem"; // Importing TeamMemberItem component
 import TeamMember6 from "./TeamMember6";
+import TeamMember7 from "./TeamMember7";
+import Divider from "../Divider/Divider";
+import TeamMember8 from "./TeamMember8";
 
 // Array of team members' data
 const teamMembers = [
@@ -96,11 +99,20 @@ const TeamMember1 = () => {
           </div>
         </div>
       </section>
+      <Divider />
       <TeamMember2 />
+      <Divider />
       <TeamMember3 />
+      <Divider />
       <TeamMember4 />
+      <Divider />
       <TeamMember5 />
+      <Divider />
       <TeamMember6 />
+      <Divider />
+      <TeamMember7 />
+      <Divider />
+      <TeamMember8 />
     </div>
   );
 };
