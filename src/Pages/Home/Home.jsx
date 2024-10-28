@@ -3,82 +3,68 @@ import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <div className="max-w-screen-xl mx-auto my-24 ">
-      {/* Banners Border - Left */}
-      <Link
-        to="/banners"
-        className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:text-indigo-500 mr-5"
-      >
-        <span className="text-sm font-medium transition-all group-hover:me-4">
-        Tailwind CSS Banners
-        </span>
-
-        {/* <span className="absolute -end-full transition-all group-hover:end-4">
-          <svg
-            className="size-5 rtl:rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </span> */}
-      </Link>
-      <Link
-        to="/cta"
-        className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:text-indigo-500 mr-5"
-      >
-        <span className="text-sm font-medium transition-all group-hover:me-4">
-        Tailwind CSS CTA Sections
-        </span>
-
-        {/* <span className="absolute -end-full transition-all group-hover:end-4">
-          <svg
-            className="size-5 rtl:rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </span> */}
-      </Link>
-      <Link
-        to="/team"
-        className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:text-indigo-500"
-      >
-        <span className="text-sm font-medium transition-all group-hover:me-4">
-        Tailwind CSS Team Sections
-        </span>
-
-        {/* <span className="absolute -end-full transition-all group-hover:end-4">
-          <svg
-            className="size-5 rtl:rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </span> */}
-      </Link>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center sm:mx-auto mx-4">
+        <Link to="/banners">
+          <div className=" bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all ">
+            {/*  <!--  Image --> */}
+            <figure>
+              <img
+                src="https://picsum.photos/id/69/800/600"
+                alt="card image"
+                className="aspect-video w-full"
+              />
+            </figure>
+            {/*  <!-- Body--> */}
+            <div className="p-6">
+              <header className="">
+                <h3 className="text-xl font-medium text-slate-700">
+                  Banners Sections
+                </h3>
+              </header>
+            </div>
+          </div>
+        </Link>
+        <Link to="/cta">
+          <div className=" bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all ">
+            {/*  <!--  Image --> */}
+            <figure>
+              <img
+                src="https://picsum.photos/id/69/800/600"
+                alt="card image"
+                className="aspect-video w-full"
+              />
+            </figure>
+            {/*  <!-- Body--> */}
+            <div className="p-6">
+              <header className="">
+                <h3 className="text-xl font-medium text-slate-700">
+                  CTA Sections
+                </h3>
+              </header>
+            </div>
+          </div>
+        </Link>
+        <Link to="/team">
+          <div className=" bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all ">
+            {/*  <!--  Image --> */}
+            <figure>
+              <img
+                src="https://picsum.photos/id/69/800/600"
+                alt="card image"
+                className="aspect-video w-full"
+              />
+            </figure>
+            {/*  <!-- Body--> */}
+            <div className="p-6">
+              <header className="">
+                <h3 className="text-xl font-medium text-slate-700">
+                  Team Sections
+                </h3>
+              </header>
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

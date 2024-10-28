@@ -99,8 +99,8 @@ export const Banners = () => {
               </svg>
             </div>
             <p className="py-2 font-medium">
-              আল্লাহ বলেন, "তোমরা আমার কাছে দোয়া করো। আমি তোমাদের দোয়া কবুল
-              করব"।♥
+              আল্লাহ বলেন, তোমরা আমার কাছে দোয়া করো। আমি তোমাদের দোয়া কবুল
+              করব।♥
             </p>
           </div>
           <a
@@ -165,7 +165,7 @@ export const Banners = () => {
             </div>
             <p className="font-medium p-2">
               {" "}
-              আল্লাহুম্মা সল্লি ওয়া'সাল্লিম আলা নাবিয়্যিনা মুহাম্মাদ❜❜{" "}
+              আল্লাহুম্মা সল্লি ওয়া সাল্লিম আলা নাবিয়্যিনা মুহাম্মাদ❜❜{" "}
               <a
                 className="font-semibold underline duration-150 hover:text-indigo-100 inline-flex items-center gap-x-1"
                 href="/"

@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
+import CallToAction1 from "./CallToAction1";
+import CallToAction2 from "./CallToAction2";
 
 const CTA = () => {
   return (
     <div className="max-w-screen-xl mx-auto my-24">
       <div className="flex items-center justify-between">
         <h3 className="text-3xl text-gray-800 font-semibold md:text-4xl my-12 underline">
-          Tailwind CSS CTA Sections:
+          Tailwind CSS{" "}
+          <Link to="/">
+            <span className="text-gray-700-600 border border-red-500 rounded-lg font-semibold p-2">
+              CTA
+            </span>
+          </Link>{" "}
+          Sections:
         </h3>
         <Link
           className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
@@ -126,6 +134,8 @@ const CTA = () => {
           </div>
         </div>
       </section>
+      <CallToAction1 />
+      <CallToAction2 />
     </div>
   );
 };
